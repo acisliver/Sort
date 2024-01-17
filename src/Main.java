@@ -8,7 +8,7 @@ public class Main {
         Collections.shuffle(list);
         System.out.println(list);
 
+        System.out.println("Bubble");
         BubbleSort.sort(list);
-        System.out.printf("Bubble\n%s\n", list);
     }
 }

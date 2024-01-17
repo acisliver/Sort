@@ -4,7 +4,6 @@ public class BubbleSort {
     public static <T extends Comparable<T>> void sort(List<T> list) {
         for (int i = 0; i < list.size(); i++) {
             for (int j = 1; j < list.size() - i; j++) {
-                System.out.printf("(%d %d)", j - 1 ,j);
                 T small = list.get(j - 1);
                 T big = list.get(j);
                 if (small.compareTo(big) > 0) {
@@ -12,7 +11,7 @@ public class BubbleSort {
                     list.set(j, small);
                 }
             }
-            System.out.println();
+            System.out.printf("%d회전: %s\n", i + 1, list);
         }
     }
 }
