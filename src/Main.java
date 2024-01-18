@@ -14,7 +14,8 @@ public class Main {
 //        System.out.println("Bubble");
 //        BubbleSort.sort(list);
 
+        arr = new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1};
         System.out.println("Insertion");
-        InsertionSort.sort(list);
+        InsertionSort.sort(arr);
     }
 }
