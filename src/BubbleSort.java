@@ -1,17 +1,17 @@
-import java.util.List;
+import java.util.Arrays;
 
 public class BubbleSort {
-    public static <T extends Comparable<T>> void sort(List<T> list) {
-        for (int i = 0; i < list.size(); i++) {
-            for (int j = 1; j < list.size() - i; j++) {
-                T small = list.get(j - 1);
-                T big = list.get(j);
-                if (small.compareTo(big) > 0) {
-                    list.set(j - 1, big);
-                    list.set(j, small);
+    public static void sort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 1; j < arr.length - i; j++) {
+                int small = arr[j - 1];
+                int big = arr[j];
+                if (small > big) {
+                    arr[j - 1] = big;
+                    arr[j] = small;
                 }
             }
-            System.out.printf("%d회전: %s\n", i + 1, list);
+            System.out.printf("%d회전: %s\n", i + 1, Arrays.toString(arr));
         }
     }
 }
