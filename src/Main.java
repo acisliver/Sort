@@ -17,7 +17,10 @@ public class Main {
 //        System.out.println("Insertion");
 //        InsertionSort.sort(arr);
 
-        System.out.println("Selection");
-        SelectionSort.sort(arr);
+//        System.out.println("Selection");
+//        SelectionSort.sort(arr);
+
+        System.out.println("Quick");
+        QuickSort.sort(arr);
     }
 }
