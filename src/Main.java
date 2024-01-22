@@ -20,7 +20,10 @@ public class Main {
 //        System.out.println("Selection");
 //        SelectionSort.sort(arr);
 
-        System.out.println("Quick");
-        QuickSort.sort(arr);
+//        System.out.println("Quick");
+//        QuickSort.sort(arr);
+
+        System.out.println("Merge");
+        MergeSort.sort(arr);
     }
 }
